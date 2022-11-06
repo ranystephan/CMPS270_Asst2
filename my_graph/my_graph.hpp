@@ -1,4 +1,5 @@
 //
+//  Github: ranystephan
 //  my_graph.hpp
 //  ranystephan.rcs04.asst2
 //
@@ -15,7 +16,16 @@
 #include <map>
 
 using namespace std;
-
+/*
+    requires: requires 2 vectors of equal size and of type int
+    effects: Constructs a Graph with the given set of edges,
+    where starts and ends represent the ordered list of edges’
+    start and endpoints
+    testing strategy:
+    1) passing two emtpy vectors
+    2) passing two vectors of different sizes
+    3) passing two of vectors of the same size
+    */
 class Graph {
 protected :
     map <int , vector <int> > outgoing ;
